@@ -1,0 +1,99 @@
+/* Базові налаштування шрифту та кольорів */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Обмеження ширини CV, щоб воно гарно виглядало на ПК */
+header,
+main,
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Стилі для шапки (header) */
+header {
+  text-align: center;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+header h1 {
+  margin-top: 0;
+  font-size: 2.5em;
+}
+
+header img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #ecf0f1;
+  margin-top: 10px;
+}
+
+/* Стилі для заголовків секцій */
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+h3 {
+  color: #2980b9;
+  margin-bottom: 5px;
+}
+
+/* Посилання */
+a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #1abc9c;
+}
+
+/* Стилі для списків (Навички та Проєкти) */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Досвід (article) */
+article {
+  background: #fdfdfd;
+  padding: 15px;
+  border-left: 4px solid #3498db;
+  margin-bottom: 15px;
+  border-radius: 0 4px 4px 0;
+}
+
+article p {
+  margin: 5px 0;
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: #7f8c8d;
+  background: transparent;
+  box-shadow: none;
+}
