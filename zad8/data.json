@@ -1,0 +1,19 @@
+{
+  "umiejetnosci": [
+    "Zaawansowana znajomość JavaScript (ES6+)",
+    "Biegłe tworzenie interfejsów użytkownika w React.js",
+    "Tworzenie aplikacji serwerowych (backend) w Node.js",
+    "Znajomość semantycznego HTML5 oraz CSS3",
+    "Biegła obsługa systemu kontroli wersji Git"
+  ],
+  "projekty": [
+    {
+      "nazwa": "E-commerce: Sklep z meblami",
+      "opis": "W pełni funkcjonalny sklep internetowy (Fullstack)."
+    },
+    {
+      "nazwa": "Zbiór mniejszych projektów na GitHub",
+      "opis": "Aplikacje i komponenty UI."
+    }
+  ]
+}
