@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Artem Petriuk</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="red.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Artem Petriuk</h1>
+      <img src="photo.jpg" alt="Zdjęcie profilowe Artema Petriuka" />
+      <div style="margin-top: 15px">
+        <button id="theme-btn" class="header-btn">
+          Zmień motyw na zielony
+        </button>
+        <button id="toggle-btn" class="header-btn">
+          Ukryj sekcję Projekty
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Kontakt</h2>
+        <p>
+          E-mail:
+          <a href="mailto:artem.petriuk.dev@example.com"
+            >artem.petriuk.dev@example.com</a
+          >
+        </p>
+        <p>Telefon: <a href="tel:+48577822111">+48 577 822 111</a></p>
+        <p>Miasto: Warszawa</p>
+        <p>
+          <a
+            href="https://github.com/68037"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Mój GitHub</a
+          >
+          |
+          <a
+            href="https://linkedin.com/in/twoj-profil"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Mój LinkedIn</a
+          >
+        </p>
+      </section>
+
+      <section>
+        <h2>O mnie</h2>
+        <p>
+          Jestem studentem informatyki w Akademii Finansów i Biznesu Vistula.
+          Specjalizuję się w tworzeniu nowoczesnych aplikacji webowych.
+        </p>
+      </section>
+
+      <section>
+        <h2>Umiejętności</h2>
+        <ul id="skills-list"></ul>
+      </section>
+
+      <section id="sekcja-projekty">
+        <h2>Projekty</h2>
+        <ul id="projects-list"></ul>
+      </section>
+
+      <section>
+        <h2>Moje Notatki (Local Storage)</h2>
+        <div class="note-input-container">
+          <input
+            type="text"
+            id="note-input"
+            placeholder="Wpisz nową notatkę..."
+          />
+          <button id="add-note-btn">Dodaj</button>
+        </div>
+        <ul id="notes-list" class="styled-list"></ul>
+      </section>
+
+      <section>
+        <h2>Napisz do mnie</h2>
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" placeholder="Wpisz imię" />
+            <span class="error-msg" id="error-imie"></span>
+          </div>
+          <div class="form-group">
+            <label for="nazwisko">Nazwisko:</label>
+            <input
+              type="text"
+              id="nazwisko"
+              name="nazwisko"
+              placeholder="Wpisz nazwisko"
+            />
+            <span class="error-msg" id="error-nazwisko"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="twoj@email.com"
+            />
+            <span class="error-msg" id="error-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="wiadomosc">Wiadomość:</label>
+            <textarea
+              id="wiadomosc"
+              name="wiadomosc"
+              rows="4"
+              placeholder="Wpisz swoją wiadomość..."
+            ></textarea>
+            <span class="error-msg" id="error-wiadomosc"></span>
+          </div>
+          <button type="submit" id="submit-btn">Wyślij wiadomość</button>
+          <p
+            id="success-msg"
+            style="
+              color: green;
+              font-weight: bold;
+              display: none;
+              margin-top: 10px;
+            "
+          >
+            Formularz wysłany poprawnie!
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Artem Petriuk. Numer indeksu: 68037</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
